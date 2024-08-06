@@ -138,7 +138,22 @@
                             <div>(in prep)</div>
                             <ul>
                                 <li>
-                                    Self-Supervised Learning with Swin UNETR for Segmentation of Organs at Risk and Tumor in PET/CT Images and Dose Map Prediction.
+                                    Radiotherapy treatment planning is crucial for ensuring optimal dose delivery to tumors while minimizing exposure to surrounding healthy tissues. This project presents a comprehensive pipeline for predicting dosimetry using advanced medical image processing and deep learning techniques. Our approach leverages a combination of pre-processing algorithms and the Swin UNETR architecture to enhance dose prediction accuracy.
+                                    <br />
+                                    <br />
+                                    Initially, the pipeline involves preprocessing Nifti images, particularly CT and PET scans, through resampling and normalization techniques. This ensures consistent spatial resolution across image modalities, essential for subsequent analysis. The preprocessing module efficiently handles medical imaging datasets, downsampling CT images to match the resolution of PET images, and normalizing them to fixed HU (Hounsfield Unit) ranges.
+                                    <br />
+                                    <br />
+                                    The core of our methodology is the implementation of the Swin UNETR model, a state-of-the-art architecture tailored for three-dimensional medical imaging tasks. The model is trained using a curated dataset, leveraging self-supervised learning (SSL) pre-trained weights and gradient checkpointing to optimize both training speed and memory usage. Our training pipeline incorporates a variety of data augmentation techniques, such as random cropping, flipping, intensity scaling, and spatial transformations, to improve model generalization.
+                                    <br />
+                                    <br />
+                                    The evaluation of model performance is conducted through extensive metrics, including Root Mean Square Error (RMSE), Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), R-squared (R2), Peak Signal-to-Noise Ratio (PSNR), and Relative Error (RE). The results indicate that our approach achieves high accuracy in predicting dose maps, offering a robust tool for enhancing radiotherapy planning.
+                                    <br />
+                                    <br />
+                                    In conclusion, the proposed dosimetry prediction pipeline effectively integrates image preprocessing, deep learning, and robust evaluation metrics to deliver a powerful framework for improving the accuracy of radiotherapy treatments. Our work demonstrates the potential of combining advanced medical imaging techniques with cutting-edge machine learning models to support healthcare professionals in making informed decisions about patient treatment plans.
+                                    <br />
+                                    <br />
+                                    <img src="assets/img/swin_unetr.png" alt="Java" style="width: 100%">
                                 </li>
                             </ul>
                         </div>
