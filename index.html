@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Aryan Neizehbaz</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto m" src="assets/img/profile.jpeg" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto m" src="assets/img/IMG_0790.HEIC" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -31,7 +31,8 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#honors-and-awards">Honor and Awards</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research-interests">Research Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#journal-papers">Journal Papers</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#conference-papers">Conference Papers</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
@@ -124,17 +125,19 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Publications-->
-            <section class="resume-section" id="publications">
+            <!-- journal-papers-->
+            <section class="resume-section" id="journal-papers">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
+                    <h2 class="mb-5">Journal Papers</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">
                                 Deep transformer-based dosimetry from pet/ct images <a href="https://github.com/Aryan8221/SSL-OARs-Tumor-Segmentation-and-Dosimetry-in-PETCT"><i class="fa-solid fa-link"></i></a>
                             </h3>
 
-                            <div class="subheading mb-3">Elmira Yazdani, Aryan Neizehbaz</div>
+                            <div class="mb-3" style="font-size: x-large; font-style: italic; font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">
+                                Elmira Yazdani, <span class="fw-bold" style="font-style: normal;">Aryan Neizehbaz</span>, Saeed Reza Kheradpisheh
+                            </div>
                             <div>(in prep)</div>
                             <ul>
                                 <li>
@@ -160,6 +163,41 @@
                     </div>
                 </div>
             </section>
+            <section class="resume-section" id="conference-papers">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Conference Papers</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">
+                                Employing Enhanced ResNet-Based Architecture for Automatic Segmentation of Tumoral
+                                Lesions and Organs on [68 Ga]Ga-PSMA11 PET/CT Images in Prostate Cancer
+                                <a href="https://drive.google.com/file/d/158fbF-OOQqcE9Rba4tgys-y460dS4KHT/view">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </h3>
+
+                            <div class="mb-3" style="font-size: x-large; font-style: italic; font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">
+                                Elmira Yazdani, <span class="fw-bold" style="font-style: normal;">Aryan Neizehbaz</span>, Najme Karamzade-Ziarati,
+                                Habibeh Vosoughi, Mahdi Sadeghi, Saeed Reza Kheradpisheh, and Parham Geramifar
+                            </div>
+                            <div>(Submitted to the 13th Iranian Congress of Medical Physics)</div>
+                            <ul>
+                                <li>
+                                    <p style="font-size: 18px; font-weight: bold;" class="mb-0">Introduction</p>
+                                    Prostate-specific membrane antigen (PSMA) PET/CT has emerged as a powerful tool for quantitative image analysis, particularly in the context of radioligand therapy (RLT) for metastatic castration-resistant prostate cancer (mCRPC). However, the manual segmentation of these images remains labor-intensive and prone to errors, limiting its scalability in clinical practice. Recent advancements in deep learning offer a promising solution, enabling faster and more accurate segmentation that reduces dependency on specialized expertise, thereby improving clinical workflow and efficiency.
+                                    <br />
+                                    <br />
+                                    <p style="font-size: 18px; font-weight: bold;" class="mb-0">Methods</p>
+                                    In this study, we propose an improved ResNet architecture designed to segment lesions and organs at risk (OARs), including salivary glands, liver, spleen, kidneys, bowel, and bladder, in 100 [68 Ga]Ga-PSMA PET/CT images. To handle image variability, normalization and data augmentation techniques were applied. The model, trained over 1000 epochs, used a residual convolutional block to extract deep features from the preprocessed images. For better segmentation accuracy, features from all ResNet layers were combined into a unified output that merged deep semantic and shallow appearance features. The model’s performance was evaluated using a 5-fold cross-validation, with 80% of the data used for training and 20% for testing. Ground truth segmentation was provided by an expert clinician using 3D Slicer, and the models were implemented using PyTorch and MONAI on an NVIDIA Tesla k80 GPU.<br />
+                                    <br />
+                                    <p style="font-size: 18px; font-weight: bold;" class="mb-0">Results</p>
+                                    The improved ResNet achieved an average Dice similarity coefficient of 0.64 for lesions and 0.82 for OARs, with corresponding precision values of 0.60 and 0.77. Recall values were 0.76 for lesions and 0.91 for OARs, outperforming the benchmark U-Net model. This enhanced ResNet architecture, with its encoder-decoder structure, successfully captured multi-scale contextual features, enabling precise and rapid target identification. The automated segmentation technique presented in this study shows great potential for advancing clinical applications, such as personalized dose prediction in RLT.<br />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <hr class="m-0" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
@@ -171,6 +209,11 @@
                             <div class="subheading mb-3">Artificial Intelligence, instructed by Dr. Ali Katanforosh</div>
                             <ul>
                                 <li>Designed mini projects and coding assignments.</li>
+                                <li>Mentored students</li>
+                            </ul>
+                            <div class="subheading mb-3">An Introduction to Artificial Intelligence, instructed by Dr. Atefeh Aghaee</div>
+                            <ul>
+                                <li>Designed coding assignments and Quizzes.</li>
                                 <li>Mentored students</li>
                             </ul>
                             <div class="subheading mb-3">Advanced Programming, instructed by Dr. Saeedreza Kheradpisheh</div>
