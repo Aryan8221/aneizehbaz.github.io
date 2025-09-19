@@ -255,19 +255,33 @@
                                 Habibeh Vosoughi, Mahdi Sadeghi, Saeed Reza Kheradpisheh, and Parham Geramifar
                             </div>
                             <div>(Presented at the 13th Iranian Congress of Medical Physics)</div>
-                            <ul>
-                                <li>
-                                    <p style="font-size: 18px; font-weight: bold;" class="mb-0">Introduction</p>
-                                    Prostate-specific membrane antigen (PSMA) PET/CT has emerged as a powerful tool for quantitative image analysis, particularly in the context of radioligand therapy (RLT) for metastatic castration-resistant prostate cancer (mCRPC). However, the manual segmentation of these images remains labor-intensive and prone to errors, limiting its scalability in clinical practice. Recent advancements in deep learning offer a promising solution, enabling faster and more accurate segmentation that reduces dependency on specialized expertise, thereby improving clinical workflow and efficiency.
-                                    <br />
-                                    <br />
-                                    <p style="font-size: 18px; font-weight: bold;" class="mb-0">Methods</p>
-                                    In this study, we propose an improved ResNet architecture designed to segment lesions and organs at risk (OARs), including salivary glands, liver, spleen, kidneys, bowel, and bladder, in 100 [68 Ga]Ga-PSMA PET/CT images. To handle image variability, normalization and data augmentation techniques were applied. The model, trained over 1000 epochs, used a residual convolutional block to extract deep features from the preprocessed images. For better segmentation accuracy, features from all ResNet layers were combined into a unified output that merged deep semantic and shallow appearance features. The model’s performance was evaluated using a 5-fold cross-validation, with 80% of the data used for training and 20% for testing. Ground truth segmentation was provided by an expert clinician using 3D Slicer, and the models were implemented using PyTorch and MONAI on an NVIDIA Tesla k80 GPU.<br />
-                                    <br />
-                                    <p style="font-size: 18px; font-weight: bold;" class="mb-0">Results</p>
-                                    The improved ResNet achieved an average Dice similarity coefficient of 0.64 for lesions and 0.82 for OARs, with corresponding precision values of 0.60 and 0.77. Recall values were 0.76 for lesions and 0.91 for OARs, outperforming the benchmark U-Net model. This enhanced ResNet architecture, with its encoder-decoder structure, successfully captured multi-scale contextual features, enabling precise and rapid target identification. The automated segmentation technique presented in this study shows great potential for advancing clinical applications, such as personalized dose prediction in RLT.<br />
-                                </li>
-                            </ul>
+                            <br />
+                            <div>
+                                <span class="fw-bold"> Introduction:</span> Prostate-specific membrane antigen (PSMA) PET/CT has emerged as a powerful tool for quantitative image analysis,
+                                particularly in the context of radioligand therapy (RLT) for metastatic castration-resistant prostate cancer (mCRPC).
+                                However, the manual segmentation of these images remains labor-intensive and prone to errors, limiting its scalability in clinical practice.
+                                Recent advancements in deep learning offer a promising solution, enabling faster and more accurate segmentation that reduces dependency
+                                on specialized expertise, thereby improving clinical workflow and efficiency.
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold"> Methods:</span> In this study, we propose an improved ResNet architecture designed to segment lesions and organs at risk (OARs),
+                                including salivary glands, liver, spleen, kidneys, bowel, and bladder, in 100 [68 Ga]Ga-PSMA PET/CT images. To handle image variability,
+                                normalization and data augmentation techniques were applied. The model, trained over 1000 epochs, used a residual convolutional block to
+                                extract deep features from the preprocessed images. For better segmentation accuracy, features from all ResNet layers were combined into
+                                a unified output that merged deep semantic and shallow appearance features. The model’s performance was evaluated using a 5-fold cross-validation,
+                                with 80% of the data used for training and 20% for testing. Ground truth segmentation was provided by an expert clinician using 3D Slicer,
+                                and the models were implemented using PyTorch and MONAI on an NVIDIA Tesla k80 GPU.
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold"> Results:</span> The improved ResNet achieved an average Dice similarity coefficient of 0.64 for lesions and 0.82 for OARs,
+                                with corresponding precision values of 0.60 and 0.77. Recall values were 0.76 for lesions and 0.91 for OARs, outperforming the benchmark U-Net model.
+                                This enhanced ResNet architecture, with its encoder-decoder structure, successfully captured multi-scale contextual features, enabling
+                                precise and rapid target identification. The automated segmentation technique presented in this study shows great potential for
+                                advancing clinical applications, such as personalized dose prediction in RLT.
+                            </div>
+                            <br />
                         </div>
                     </div>
                 </div>
