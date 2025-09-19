@@ -102,7 +102,7 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Honors and Awards</h2>
                     <ul>
-                        <li>GPA ranked in the top 5% among students in the computer science major.</li>
+                        <li>GPA ranked in the top 10% among students in the computer science major.</li>
                         <li>Awarded full tuition waiver for achieving top 0.3% ranking among 120,000 students in the Iranian university entrance exam.</li>
                         <li>Accepted at the first level in high school Chemistry Olympiad.</li>
                     </ul>
@@ -139,57 +139,100 @@
                                 Elmira Yazdani, <span class="fw-bold" style="font-style: normal;">Aryan Neizehbaz</span>, Najme Karamzade-Ziarati, Saeed Reza Kheradpisheh
                             </div>
                             <div>(Journal of Medical Imaging and Radiation Sciences 56 (5): 102023, September 2025 <a href="https://www.sciencedirect.com/science/article/pii/S1939865425001729?dgcid=coauthor"><i class="fa-solid fa-link"></i></a>)</div>
-                            <ul>
-                                <li>
-                                    <!-- This project focuses on developing interpretable AI models for classifying chest X-ray images into three categories: normal, viral pneumonia, and bacterial pneumonia. By utilizing ProtoPNet and its variant, Deformable ProtoPNet, we aimed to build models that not only achieve high accuracy but also provide transparency in their decision-making process.
-                                    <br />
-                                    <br />
-                                    ProtoPNet leverages visual prototypes to highlight the key features contributing to each class prediction, making the classification process more interpretable for clinicians. Deformable ProtoPNet further enhances this capability by allowing the model to adapt to variations in X-ray images, capturing subtle patterns specific to each pneumonia type.
-                                    <br />
-                                    <br />
-                                    Our models were evaluated based on F1 score, precision, recall, and accuracy, demonstrating their effectiveness as reliable tools for medical diagnostics. This project underscores the potential of interpretable AI to improve clinical decision-making and build trust in AI-driven healthcare applications.
-                                    <br />
-                                    <br /> -->
+                            <br />
+<!--                            <ul>-->
+                            <div>
+                                <span class="fw-bold"> Background: </span> Pneumonia detection in chest X-rays (CXR) increasingly relies on AI-driven
+                                diagnostic systems. However, their “blackbox” nature often lacks transparency, underscoring the need for interpretability
+                                to improve patient outcomes. This study presents the first application of the Deformable Prototypical Part Network (DProtoPNet),
+                                an ante-hoc interpretable deep learning (DL) model, for pneumonia classification in pediatric patients’ CXR images.
+                                Clinical insights were integrated through expert radiologist evaluation of the model’s learned prototypes and activated image patches,
+                                ensuring that explanations aligned with medically meaningful features.
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold"> Methods: </span> The model was developed and tested on a retrospective dataset of 5,856 CXR images of pediatric patients, ages 1–5 years.
+                                The images were originally acquired at a tertiary academic medical center as part of routine clinical care and were publicly hosted on a Kaggle platform.
+                                This dataset comprised anterior-posterior images labeled normal, viral, and bacterial. It was divided into 80 % training and 20 % validation splits,
+                                and utilised in a supervised five-fold cross-validation. Performance metrics were compared with the original ProtoPNet,
+                                utilising ResNet50 as the base model. An experienced radiologist assessed the clinical relevance of the learned prototypes,
+                                patch activations, and model explanations.
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold"> Results: </span> The D-ProtoPNet achieved an accuracy of 86 %, precision of 86 %, recall of 85 %, and AUC of 93 %, marking a 3 % improvement over the original ProtoPNet.
+                                While further optimisation is required before clinical use, the radiologist praised D-ProtoPNet’s intuitive explanations,
+                                highlighting its interpretability and potential to aid clinical decision-making.
 
-                                    Developed D-ProtoPNet for pneumonia classification in pediatric CXR images.
-                                </li>
-                                <li>D-ProtoPNet achieved 0.86 accuracy and 0.93 AUC in pneumonia detection.</li>
-                                <li>Clinical validation confirmed D-ProtoPNet’s transparent and intuitive explanations.</li>
-                                <li>D-ProtoPNet outperformed ProtoPNet by 3 % in classification accuracy.</li>
-                                <li>The study highlights the importance of explainable AI in clinical decision support.</li>
-                            </ul>
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold"> Conclusion: </span> Prototypical part learning offers a balance between classification performance and explanation quality, but requires improvements
+                                to match the accuracy of black-box models. This study underscores the importance of integrating domain expertise during model evaluation
+                                to ensure the interpretability of XAI models is grounded in clinically valid insights.
+                            </div>
+                            <br />
+                            <img src="assets/img/XAI_image.png" alt="XAI image" style="width: 100%">
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">
-                                Deep transformer-based dosimetry from pet/ct images <a href="https://github.com/Aryan8221/SSL-OARs-Tumor-Segmentation-and-Dosimetry-in-PETCT">[CODE]</a>
+                                Transforming [177Lu]Lu-PSMA-617 Treatment Planning: Machine Learning-Based Radiodosiomics and Swin UNETR using Pretherapy PSMA PET/CT <a href="https://github.com/ElmiraYazdani/Machine-Learning-Based-Radiodosiomics-and-Swin-UNETR-Framework-for-Dose-Prediction">[CODE]</a>
                             </h3>
 
                             <div class="mb-3" style="font-size: x-large; font-style: italic; font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">
                                 Elmira Yazdani, <span class="fw-bold" style="font-style: normal;">Aryan Neizehbaz</span>, Najme Karamzade-Ziarati, Farshad Emami, Habibeh Vosoughi, Mahboobeh Asadi, Atefeh Mahmoudi, Mahdi Sadeghi, Saeed Reza Kheradpisheh, Parham Geramifar
                             </div>
-                            <div>(Submitted to the Medical Physics Journal <a href="https://aapm.onlinelibrary.wiley.com/journal/24734209"><i class="fa-solid fa-link"></i></a>) </div>
-                            <ul>
-                                <li>
-                                    Radiotherapy treatment planning is crucial for ensuring optimal dose delivery to tumors while minimizing exposure to surrounding healthy tissues. This project presents a comprehensive pipeline for predicting dosimetry using advanced medical image processing and deep learning techniques. Our approach leverages a combination of pre-processing algorithms and the Swin UNETR architecture to enhance dose prediction accuracy.
-                                    <br />
-                                    <br />
-                                    Initially, the pipeline involves preprocessing Nifti images, particularly CT and PET scans, through resampling and normalization techniques. This ensures consistent spatial resolution across image modalities, essential for subsequent analysis. The preprocessing module efficiently handles medical imaging datasets, downsampling CT images to match the resolution of PET images, and normalizing them to fixed HU (Hounsfield Unit) ranges.
-                                    <br />
-                                    <br />
-                                    The core of our methodology is the implementation of the Swin UNETR model, a state-of-the-art architecture tailored for three-dimensional medical imaging tasks. The model is trained using a curated dataset, leveraging self-supervised learning (SSL) pre-trained weights and gradient checkpointing to optimize both training speed and memory usage. Our training pipeline incorporates a variety of data augmentation techniques, such as random cropping, flipping, intensity scaling, and spatial transformations, to improve model generalization.
-                                    <br />
-                                    <br />
-                                    The evaluation of model performance is conducted through extensive metrics, including Root Mean Square Error (RMSE), Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), R-squared (R2), Peak Signal-to-Noise Ratio (PSNR), and Relative Error (RE). The results indicate that our approach achieves high accuracy in predicting dose maps, offering a robust tool for enhancing radiotherapy planning.
-                                    <br />
-                                    <br />
-                                    In conclusion, the proposed dosimetry prediction pipeline effectively integrates image preprocessing, deep learning, and robust evaluation metrics to deliver a powerful framework for improving the accuracy of radiotherapy treatments. Our work demonstrates the potential of combining advanced medical imaging techniques with cutting-edge machine learning models to support healthcare professionals in making informed decisions about patient treatment plans.
-                                    <br />
-                                    <br />
-                                    <img src="assets/img/swin_unetr.png" alt="Java" style="width: 100%">
-                                </li>
-                            </ul>
+                            <div>(Accepted at Medical Physics Journal <a href="https://aapm.onlinelibrary.wiley.com/journal/24734209"><i class="fa-solid fa-link"></i></a>) </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold">Background:</span> Personalized pretreatment dosimetry planning is crucial for optimizing [¹⁷⁷Lu]Lu-prostate-specific membrane antigen-617 (Lu-PSMA)
+                                radioligand therapy (RLT) in metastatic castration-resistant prostate cancer (mCRPC) patients.
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold">Purpose:</span> This study addresses two goals. First, we develop a machine learning (ML)-based pretreatment planning model to predict post-therapy
+                                absorbed doses (ADs) in metastatic lesions by integrating clinical biomarkers (CBs) with radiomic features (RFs) and dosiomic features (DFs)
+                                extracted from [⁶⁸Ga]Ga-PSMA-11 (Ga-PSMA) PET/CT to enhance predictive accuracy. Second, we develop a transformer-based deep learning (DL)
+                                architecture to predict Monte Carlo (MC)-derived dose rate maps (DRMs), minimizing reliance on computationally intensive MC simulations.
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold">Methods:</span> For the ML objective, retrospective posttreatment dosimetry data from 20 mCRPC patients treated with Lu-PSMA RLT were used as ground
+                                truth labels. Patient-specific MC dosimetry was employed on Ga-PSMA PET/CT images using the GATE v9.1 toolkit to generate DRMs. After image
+                                preprocessing, RFs and DFs were extracted from Ga-PSMA CT images and DRMs using LIFEx v7.4.0. Feature selection was conducted via recursive
+                                feature elimination with Benjamini-Hochberg correction (q<0.05). Multiple nonlinear regression models were trained using leave-one-out
+                                crossvalidation (LOOCV), and model interpretability was assessed using SHAP and LIME radar plots. A shifted windows UNET Transformers (Swin UNETR)
+                                architecture with selfsupervised learning (SSL) pretraining was employed to predict voxel-wise PET-based DRMs for the DL objective. The model
+                                was fine-tuned on MC-labeled DRM data from 30 patients (including 10 additional cases) using 5-fold cross-validation.
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold">Results:</span> The ensemble tree regressor (ETR) using selected CT RFs, PET DFs, and significant CBs achieved R² = 0.82 and RMSE = 0.67 Gy/GBq.
+                                For DRM prediction, the SSL-pretrained Swin UNETR achieved R² of 0.97, NRMSE of 0.003 Gy/GBq, and a Gamma pass rate of 99.08%, closely matching MC-derived DRMs.
+                            </div>
+                            <br />
+                            <div>
+                                <span class="fw-bold">Conclusions:</span> Integrating ML-based radiodosiomics and transformerbased DL enables accurate, efficient lesion AD and DRM prediction from pretherapy PET/CT,
+                                supporting personalized Lu-PSMA RLT planning.
+                            </div>
+                            <br />
+                            <img src="assets/img/swin_unetr.png" alt="swin unetr" style="width: 100%">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">
+                                From Bitewing to Report: VLM-Assisted Pulpal Exposure Classification and Risk Stratification
+                            </h3>
+                            <div>(in preparation) </div>
+                            <br />
+                            <div>
+                                Developing a vision-language model that leverages planar thyroid images and clinical data to generate
+                                diagnostic descriptions, using doctors' reports as labeled outputs to enhance accuracy in thyroid
+                                disease analysis.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,6 +329,22 @@
                             </ul>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Sep 2022 - Mar 2023</span></div>
+                    </div>
+                    <!-- IT Specialist -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">IT Specialist Intern</h3>
+                            <div class="subheading mb-3">Global Village Computer Store and Services</div>
+                            <h5>Projects</h5>
+                            <ul>
+                                <li>Diagnosing and resolving hardware and software issues</li>
+                                <li>Conducting technical repairs and maintenance</li>
+                                <li>Providing client support and system troubleshooting</li>
+                                <li>Assisting in the deployment and implementation of new technologies</li>
+                                <li>Ensuring optimal system performance and reliability</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jan 2025 - Aug 2025</span></div>
                     </div>
                 </div>
             </section>
@@ -411,7 +470,7 @@
                     <ul>
                         <li>English</li>
                             <ul>
-                                <li class="mb-3">IELTS: Overall Score:7.0 / Listening:7.5 / Reading:7.5 / Writing:6.5 / Speaking:6.5</li>
+                                <li class="mb-3">IELTS: Overall Score: 7.0 / Listening: 7.5 / Reading: 7.5 / Writing: 6.5 / Speaking: 6.5</li>
                             </ul>
                         <li>Persian</li>
                     </ul>
